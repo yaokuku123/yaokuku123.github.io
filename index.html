@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#080b0e" />
+    <meta
+      name="description"
+      content="Yorick · 姚启钧的个人空间。关于 AI Agent、系统架构，以及把问题想清楚的过程。"
+    />
+    <title>Yorick — A small universe</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="refinement.css" />
+    <script type="module" src="app.js"></script>
+  </head>
+  <body>
+    <a class="skip" href="#content">跳到正文</a>
+    <canvas id="sky" aria-hidden="true"></canvas>
+    <div class="grain" aria-hidden="true"></div>
+    <header class="header">
+      <a class="wordmark" href="#/" aria-label="Yorick 首页"
+        >Yorick<span>✧</span></a
+      >
+      <nav aria-label="主导航">
+        <a href="#/writing" data-nav="writing"
+          ><i class="nav-orb moon"></i>Writing</a
+        ><a href="#/projects" data-nav="projects"
+          ><i class="nav-orb earth"></i>Projects</a
+        ><a href="#/ideas" data-nav="ideas"
+          ><i class="nav-orb eclipse"></i>Ideas</a
+        ><a href="#/about" data-nav="about" class="about-nav"
+          >About <span>↗</span></a
+        >
+      </nav>
+      <span class="header-coordinate">A SMALL UNIVERSE / EST. 2026</span>
+    </header>
+    <main id="content" tabindex="-1"></main>
+    <footer>
+      <a href="#/">Yorick’s small universe</a><span>保持好奇，慢慢构建。</span
+      ><a class="visual-credit" href="https://burnsgao.me/" target="_blank" rel="noreferrer">Visual study · Burns’ Blog ↗</a><span class="preview-mark">部分学习内容为示例 · 持续更新</span>
+    </footer>
+    <div class="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
