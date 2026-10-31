@@ -130,6 +130,6 @@ tags: [Python, Agent]
 
 GitHub、邮箱和微信展示名在 profile.json；微信二维码原图在 media/wechat-contact.jpg。首页与 About 共用这些资产，替换二维码无需修改页面代码。截图中的 yorick_jun 仅作为微信展示名，不假定为微信号。
 
-## 文章标签
+## 文章分类
 
-文章 front matter 支持 `tags: [创业 0 到 1, 融资, 股权]`，一篇可有多个标签。Writing 默认按日期倒序，同日按 order 升序，再按文件名排序。标签可与分类、搜索同时使用，点击「全部标签」取消标签筛选。标签显示在文章列表和详情页；省略 tags 时仍正常显示。
+文章 front matter 使用 `category: 商业` 归类。Writing 只展示一层分类筛选，可与搜索组合使用；默认日期倒序，同日按 order 升序。不展示细分标签。

@@ -1680,7 +1680,3 @@ body[data-page="home"] footer{display:none}
 .repo-labels span:first-child { color: var(--gold); }
 @media (max-width: 600px) { .repo-group-title span { display: block; margin: 8px 0 0; } .repo-entry { gap: 12px; } .repo-entry h2 { font-size: 18px; } .wechat-dialog { padding: 26px 20px; } }
 
-/* Article labels share the existing muted gold palette. */
-.post-tags { display:flex; flex-wrap:wrap; gap:8px; margin:12px 0; }
-.post-tag { font-size:12px; color:var(--gold, #c1aa80); border:1px solid #bba07540; border-radius:4px; padding:3px 8px; }
-.tag-filters { flex-wrap:wrap; margin-bottom:24px; }

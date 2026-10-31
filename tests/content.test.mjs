@@ -192,21 +192,19 @@ test('standalone source builds new content and resume, excludes drafts, removes 
   assert.equal(await readFile(path.join(standalone, 'dist/content/site.json'), 'utf8'), previous);
 });
 
-test("article tags normalize and combine with category/search while keeping newest first", async (t) => {
+test("writing keeps category filtering and newest order without tags or course promotion", async () => {
   const { filterPosts, writingPage, articlePage } = await import('../src/pages/writing.js');
-  const root = await fixture(t);
-  for (const [slug, date, tags] of [['older', '2026-10-01', '[创业, 融资]'], ['newer', '2026-10-31', '[创业, " 融资 ", 融资, ""]'], ['other', '2026-10-30', '[]']]) {
-    await writeFile(path.join(root, `posts/${slug}.md`), `---\ntitle: ${slug}\ndate: "${date}"\ncategory: 笔记\ntags: ${tags}\n---\n\n## 正文\n\n内容`);
-  }
-  const { posts } = await compileContent(root);
-  assert.deepEqual(posts[0].tags, ['创业', '融资']);
-  assert.deepEqual(filterPosts([...posts].reverse(), '全部', '融资').map(p => p.slug), ['newer', 'older']);
-  assert.deepEqual(filterPosts(posts, '笔记', '融资', 'newer').map(p => p.slug), ['newer']);
-  assert.equal(filterPosts(posts, '其他', '融资').length, 0);
-  assert.equal(filterPosts(posts, '全部', '', '融资').length, 2);
-  assert.equal(filterPosts(posts).length, 3);
-  assert.match(writingPage(posts), /文章标签/);
-  assert.match(articlePage(posts, 'newer'), /# 融资/);
-  await writeFile(path.join(root, 'posts/bad.md'), '---\ndate: "2026-10-31"\ntags: 融资\n---\n正文');
-  await assert.rejects(compileContent(root), /tags must be a list/);
+  const posts = [
+    {slug:'older', title:'融资', date:'2026-10-01', category:'商业', tags:['融资'], sections:[]},
+    {slug:'other', title:'技术', date:'2026-10-30', category:'技术', sections:[]},
+    {slug:'newer', title:'产品', date:'2026-10-31', category:'商业', sections:[]},
+  ];
+  assert.deepEqual(filterPosts(posts, '商业').map(p => p.slug), ['newer', 'older']);
+  assert.deepEqual(filterPosts(posts, '商业', '融资').map(p => p.slug), ['older']);
+  assert.deepEqual(filterPosts(posts).map(p => p.slug), ['newer', 'other', 'older']);
+  assert.equal(filterPosts(posts, '商业', '不存在').length, 0);
+  const page = writingPage(posts);
+  assert.match(page, /文章分类/);
+  assert.doesNotMatch(page, /文章标签|data-tag|路人|course/);
+  assert.doesNotMatch(articlePage(posts, 'older'), /post-tags|浏览课程目录/);
 });
