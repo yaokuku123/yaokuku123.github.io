@@ -17,7 +17,7 @@ async function loadJson(file) {
   if (!response.ok) throw Error(`Unable to load ${file}`);
   return response.json();
 }
-function createRouter({ posts, ideas, projects, profile }, lessons, resume) {
+function createRouter({ posts, ideas, projects, profile, about }, lessons, resume) {
   const routes = {
     home: {
       title: "Yorick — A small universe",
@@ -47,7 +47,7 @@ function createRouter({ posts, ideas, projects, profile }, lessons, resume) {
       title: "课程详情",
       render: (key) => lessonPage(lessons, posts, key),
     },
-    about: { title: "About · 姚启钧", render: () => aboutPage(profile) },
+    about: { title: "About · 姚启钧", render: () => aboutPage(profile, about) },
     resume: { title: "Resume · 姚启钧", render: () => resumePage(resume) },
   };
   return function render() {

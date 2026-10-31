@@ -1,0 +1,10 @@
+---
+title: 我的文章标题
+date: "2026-10-31"
+category: 心得
+draft: true
+---
+
+## 从一个问题开始
+
+正文。发布前删除 draft 或改为 false。

@@ -1,0 +1,2 @@
+# 每行放一个 GitHub 仓库链接，保存后自动进入 Projects。
+# 支持 https://github.com/owner/repo 。需要自定义介绍时，在本目录新增 Markdown。

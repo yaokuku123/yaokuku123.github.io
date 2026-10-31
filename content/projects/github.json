@@ -1,0 +1,302 @@
+{
+  "username": "yaokuku123",
+  "syncedAt": "2026-10-17T11:04:11.102Z",
+  "projects": [
+    {
+      "github": "https://github.com/yaokuku123/yaokuku123",
+      "slug": "yaokuku123--yaokuku123",
+      "title": "yaokuku123",
+      "desc": "仓库暂未填写简介，可在 GitHub 查看代码与文档。",
+      "fork": false,
+      "archived": false,
+      "tags": [],
+      "status": "公开仓库",
+      "updatedAt": "2026-04-23T14:09:41Z"
+    },
+    {
+      "github": "https://github.com/yaokuku123/TrendRadar",
+      "slug": "yaokuku123--trendradar",
+      "title": "TrendRadar",
+      "desc": "仓库暂未填写简介，可在 GitHub 查看代码与文档。",
+      "fork": false,
+      "archived": false,
+      "tags": [
+        "Python"
+      ],
+      "status": "公开仓库",
+      "updatedAt": "2026-04-02T12:42:08Z"
+    },
+    {
+      "github": "https://github.com/yaokuku123/aime-reproduction",
+      "slug": "yaokuku123--aime-reproduction",
+      "title": "aime-reproduction",
+      "desc": "仓库暂未填写简介，可在 GitHub 查看代码与文档。",
+      "fork": false,
+      "archived": false,
+      "tags": [],
+      "status": "公开仓库",
+      "updatedAt": "2025-08-04T08:09:09Z"
+    },
+    {
+      "github": "https://github.com/yaokuku123/llm_hyper_mind",
+      "slug": "yaokuku123--llm_hyper_mind",
+      "title": "llm_hyper_mind",
+      "desc": "Code related to large models.",
+      "fork": false,
+      "archived": false,
+      "tags": [
+        "Python"
+      ],
+      "status": "公开仓库",
+      "updatedAt": "2025-02-04T09:30:43Z"
+    },
+    {
+      "github": "https://github.com/yaokuku123/zerotrust",
+      "slug": "yaokuku123--zerotrust",
+      "title": "zerotrust",
+      "desc": "基于Spring Boot，Spring Cloud（Eureka，Gateway，Ribbon，Feign），Spring Security，JWT，MyBatis、Redis以及区块链技术实现多个token验证登录的大数据网关，大数据网关作为访问控制的节点，集成对用户身份，软件合法性，策略的控制。",
+      "fork": false,
+      "archived": false,
+      "tags": [
+        "Java"
+      ],
+      "status": "公开仓库",
+      "updatedAt": "2022-12-13T10:41:21Z"
+    },
+    {
+      "github": "https://github.com/yaokuku123/lottery-react",
+      "slug": "yaokuku123--lottery-react",
+      "title": "lottery-react",
+      "desc": "基于react实现简易版以太坊彩票投注系统",
+      "fork": false,
+      "archived": false,
+      "tags": [
+        "JavaScript"
+      ],
+      "status": "公开仓库",
+      "updatedAt": "2022-11-07T11:33:48Z"
+    },
+    {
+      "github": "https://github.com/yaokuku123/springboot-blog",
+      "slug": "yaokuku123--springboot-blog",
+      "title": "springboot-blog",
+      "desc": "基于SpringBoot的博客系统",
+      "fork": false,
+      "archived": false,
+      "tags": [
+        "JavaScript"
+      ],
+      "status": "公开仓库",
+      "updatedAt": "2022-06-21T04:00:15Z"
+    },
+    {
+      "github": "https://github.com/yaokuku123/softVerify",
+      "slug": "yaokuku123--softverify",
+      "title": "softVerify",
+      "desc": "软件认证服务系统",
+      "fork": false,
+      "archived": false,
+      "tags": [
+        "Java"
+      ],
+      "status": "公开仓库",
+      "updatedAt": "2022-03-01T02:07:51Z"
+    },
+    {
+      "github": "https://github.com/yaokuku123/zerotrust-front",
+      "slug": "yaokuku123--zerotrust-front",
+      "title": "zerotrust-front",
+      "desc": "零信任软件认证系统的前端部分",
+      "fork": false,
+      "archived": false,
+      "tags": [
+        "Vue"
+      ],
+      "status": "公开仓库",
+      "updatedAt": "2021-12-09T04:47:41Z"
+    },
+    {
+      "github": "https://github.com/yaokuku123/BlindVerify",
+      "slug": "yaokuku123--blindverify",
+      "title": "BlindVerify",
+      "desc": "盲认证",
+      "fork": false,
+      "archived": false,
+      "tags": [
+        "Java"
+      ],
+      "status": "公开仓库",
+      "updatedAt": "2021-07-05T07:06:32Z"
+    },
+    {
+      "github": "https://github.com/yaokuku123/socket-qq",
+      "slug": "yaokuku123--socket-qq",
+      "title": "socket-qq",
+      "desc": "基于Java网络编程，实现简易版本的qq通讯系统。该系统实现了客户端和服务端两部分。实现了登录功能，私聊功能，群发消息功能，上传文件功能，服务端推送消息功能。技术栈：Java网络编程，Java并发编程",
+      "fork": false,
+      "archived": false,
+      "tags": [
+        "Java"
+      ],
+      "status": "公开仓库",
+      "updatedAt": "2021-06-04T15:04:45Z"
+    },
+    {
+      "github": "https://github.com/yaokuku123/smartContract",
+      "slug": "yaokuku123--smartcontract",
+      "title": "smartContract",
+      "desc": "基于RBAC的访问控制智能合约",
+      "fork": false,
+      "archived": false,
+      "tags": [
+        "Solidity"
+      ],
+      "status": "公开仓库",
+      "updatedAt": "2020-12-02T08:33:24Z"
+    },
+    {
+      "github": "https://github.com/yaokuku123/pattern",
+      "slug": "yaokuku123--pattern",
+      "title": "pattern",
+      "desc": "23种设计模式的实现Demo",
+      "fork": false,
+      "archived": false,
+      "tags": [
+        "Java"
+      ],
+      "status": "公开仓库",
+      "updatedAt": "2020-10-13T23:06:37Z"
+    },
+    {
+      "github": "https://github.com/yaokuku123/pbft",
+      "slug": "yaokuku123--pbft",
+      "title": "pbft",
+      "desc": "pbft拜占庭共识算法实现",
+      "fork": false,
+      "archived": false,
+      "tags": [
+        "Java"
+      ],
+      "status": "公开仓库",
+      "updatedAt": "2020-10-10T07:49:08Z"
+    },
+    {
+      "github": "https://github.com/yaokuku123/smartcontract-rbac",
+      "slug": "yaokuku123--smartcontract-rbac",
+      "title": "smartcontract-rbac",
+      "desc": "基于RBAC的访问控制服务",
+      "fork": false,
+      "archived": false,
+      "tags": [
+        "CSS"
+      ],
+      "status": "公开仓库",
+      "updatedAt": "2020-07-29T09:19:55Z"
+    },
+    {
+      "github": "https://github.com/yaokuku123/AlgorithmBySM2",
+      "slug": "yaokuku123--algorithmbysm2",
+      "title": "AlgorithmBySM2",
+      "desc": "SM2 Algorithm-Test",
+      "fork": false,
+      "archived": false,
+      "tags": [
+        "Java"
+      ],
+      "status": "公开仓库",
+      "updatedAt": "2020-03-31T06:51:13Z"
+    },
+    {
+      "github": "https://github.com/yaokuku123/random-number-generators",
+      "slug": "yaokuku123--random-number-generators",
+      "title": "random-number-generators",
+      "desc": "random number generators",
+      "fork": false,
+      "archived": false,
+      "tags": [
+        "C"
+      ],
+      "status": "公开仓库",
+      "updatedAt": "2020-01-09T08:48:33Z"
+    },
+    {
+      "github": "https://github.com/yaokuku123/OpenViking",
+      "slug": "yaokuku123--openviking",
+      "title": "OpenViking",
+      "desc": "Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills.",
+      "fork": true,
+      "archived": false,
+      "tags": [],
+      "status": "Fork · 协作与探索",
+      "updatedAt": "2026-09-15T14:05:55Z"
+    },
+    {
+      "github": "https://github.com/yaokuku123/pi-dynamic-workflows",
+      "slug": "yaokuku123--pi-dynamic-workflows",
+      "title": "pi-dynamic-workflows",
+      "desc": "Claude Code–style dynamic workflows for Pi: code-mode subagents with real model routing, journaled resume, git-worktree isolation, cost accounting, an interactive /workflows TUI, an /ultracode standing opt-in, and deep research.",
+      "fork": true,
+      "archived": false,
+      "tags": [],
+      "status": "Fork · 协作与探索",
+      "updatedAt": "2026-09-07T00:53:21Z"
+    },
+    {
+      "github": "https://github.com/yaokuku123/CL4R1T4S",
+      "slug": "yaokuku123--cl4r1t4s",
+      "title": "CL4R1T4S",
+      "desc": "LEAKED SYSTEM PROMPTS FOR CHATGPT, CLAUDE, GEMINI, GROK, PERPLEXITY, CURSOR, LOVABLE, REPLIT, AND MORE! - AI SYSTEMS TRANSPARENCY FOR ALL! 👐",
+      "fork": true,
+      "archived": false,
+      "tags": [],
+      "status": "Fork · 协作与探索",
+      "updatedAt": "2026-06-09T22:37:34Z"
+    },
+    {
+      "github": "https://github.com/yaokuku123/OpenCLI",
+      "slug": "yaokuku123--opencli",
+      "title": "OpenCLI",
+      "desc": "Make Any Website & Tool Your CLI. A universal CLI Hub and AI-native runtime. Transform any website, Electron app, or local binary into a standardized command-line interface. Built for AI Agents to discover, learn, and execute tools seamlessly via a unified AGENT.md integration.",
+      "fork": true,
+      "archived": false,
+      "tags": [
+        "JavaScript"
+      ],
+      "status": "Fork · 协作与探索",
+      "updatedAt": "2026-05-07T06:36:58Z"
+    },
+    {
+      "github": "https://github.com/yaokuku123/deer-flow",
+      "slug": "yaokuku123--deer-flow",
+      "title": "deer-flow",
+      "desc": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours.",
+      "fork": true,
+      "archived": false,
+      "tags": [],
+      "status": "Fork · 协作与探索",
+      "updatedAt": "2026-04-11T07:51:02Z"
+    },
+    {
+      "github": "https://github.com/yaokuku123/claude-code-v-2.1.88",
+      "slug": "yaokuku123--claude-code-v-2.1.88",
+      "title": "claude-code-v-2.1.88",
+      "desc": "仓库暂未填写简介，可在 GitHub 查看代码与文档。",
+      "fork": true,
+      "archived": false,
+      "tags": [],
+      "status": "Fork · 协作与探索",
+      "updatedAt": "2026-03-31T14:22:22Z"
+    },
+    {
+      "github": "https://github.com/yaokuku123/OpenManus",
+      "slug": "yaokuku123--openmanus",
+      "title": "OpenManus",
+      "desc": "No fortress, purely open ground.  OpenManus is Coming.",
+      "fork": true,
+      "archived": false,
+      "tags": [],
+      "status": "Fork · 协作与探索",
+      "updatedAt": "2025-03-11T03:02:08Z"
+    }
+  ]
+}

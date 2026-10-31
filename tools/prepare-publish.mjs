@@ -1,0 +1,10 @@
+import { mkdtemp, mkdir } from 'node:fs/promises';
+import path from 'node:path';
+import { projectRoot, buildSite } from './build.mjs';
+import { exportSource } from './lib/publish-source.mjs';
+await mkdir(path.join(projectRoot, 'tmp'), { recursive: true });
+const output = await mkdtemp(path.join(projectRoot, 'tmp/source-'));
+await exportSource(projectRoot, output);
+await buildSite({ root: output });
+console.log(`Reviewable standalone source: ${output}`);
+console.log('No files pushed; no hosting settings changed.');

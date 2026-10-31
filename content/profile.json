@@ -1,0 +1,23 @@
+{
+  "github": "https://github.com/yaokuku123",
+  "email": "yaoqijun@outlook.com",
+  "wechat": {
+    "name": "yorick_jun",
+    "image": "/media/wechat-contact.jpg"
+  },
+  "blog": "https://www.jianshu.com/u/52300d5c251a",
+  "focus": [
+    "Agent · Harness / CLI",
+    "数据服务与质量评测",
+    "系统架构与可观测"
+  ],
+  "intro": {
+    "name": "Yorick",
+    "work": "Building agent systems.",
+    "location": "Beijing.",
+    "education": "北京科技大学 · 硕士",
+    "exploring": "Exploring AI and systems."
+  },
+  "aboutTitle": "Yorick / 姚启钧",
+  "aboutLead": "AI / Agent 应用工程 · 系统架构 · 数据智能"
+}
