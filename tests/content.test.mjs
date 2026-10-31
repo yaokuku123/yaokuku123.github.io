@@ -191,3 +191,22 @@ test('standalone source builds new content and resume, excludes drafts, removes 
   await assert.rejects(buildSite({ root: standalone }), /broken.md/);
   assert.equal(await readFile(path.join(standalone, 'dist/content/site.json'), 'utf8'), previous);
 });
+
+test("article tags normalize and combine with category/search while keeping newest first", async (t) => {
+  const { filterPosts, writingPage, articlePage } = await import('../src/pages/writing.js');
+  const root = await fixture(t);
+  for (const [slug, date, tags] of [['older', '2026-10-01', '[创业, 融资]'], ['newer', '2026-10-31', '[创业, " 融资 ", 融资, ""]'], ['other', '2026-10-30', '[]']]) {
+    await writeFile(path.join(root, `posts/${slug}.md`), `---\ntitle: ${slug}\ndate: "${date}"\ncategory: 笔记\ntags: ${tags}\n---\n\n## 正文\n\n内容`);
+  }
+  const { posts } = await compileContent(root);
+  assert.deepEqual(posts[0].tags, ['创业', '融资']);
+  assert.deepEqual(filterPosts([...posts].reverse(), '全部', '融资').map(p => p.slug), ['newer', 'older']);
+  assert.deepEqual(filterPosts(posts, '笔记', '融资', 'newer').map(p => p.slug), ['newer']);
+  assert.equal(filterPosts(posts, '其他', '融资').length, 0);
+  assert.equal(filterPosts(posts, '全部', '', '融资').length, 2);
+  assert.equal(filterPosts(posts).length, 3);
+  assert.match(writingPage(posts), /文章标签/);
+  assert.match(articlePage(posts, 'newer'), /# 融资/);
+  await writeFile(path.join(root, 'posts/bad.md'), '---\ndate: "2026-10-31"\ntags: 融资\n---\n正文');
+  await assert.rejects(compileContent(root), /tags must be a list/);
+});

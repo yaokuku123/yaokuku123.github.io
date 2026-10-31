@@ -131,6 +131,8 @@ async function collection(root, kind) {
           ),
         };
         if (kind === "posts") {
+          assert(data.tags === undefined || (Array.isArray(data.tags) && data.tags.every(tag => typeof tag === "string")), "tags must be a list of text");
+          record.tags = [...new Set((data.tags || []).map(tag => tag.trim()).filter(Boolean))];
           record.desc = text(
             data.description ?? data.desc,
             "description",
